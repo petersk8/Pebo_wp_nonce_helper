@@ -34,21 +34,6 @@ class Pebo_wp_nonce_helper{
         return $secured_url;
     }
 
-     /**
-     * Creates a secure Url for a specific ation.
-     * @param string $actionurl (required) The url of the action to secure
-     * @param string $action nonce action name
-     * @param string $name nonce name
-     * @return string $secured_url a url with nonces
-     */
-    public static function create_nonce_url($actionurl, $action, $name){
-        //action url is required
-        if(!isset($actionurl)){
-            return null;
-        }
-        $secured_url = wp_nonce_url($actionurl, $action, $name );
-        return $secured_url;
-    }
 
     /**
      * Validates a nonce field
