@@ -1,0 +1,14 @@
+{
+    "name": "pebo/wp_nonce_helper",
+    "description": "basic support class for wordpress nonce ussage",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "PeBo",
+            "email": "pedroborrego@pebo.pro"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
