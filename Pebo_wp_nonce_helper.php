@@ -59,7 +59,7 @@ class Pebo_wp_nonce_helper{
      * @param string $action (optional) Action name
      * @param string $name (optional) Nonce name
      */
-    public static function check_nounce_field($action, $name){
+    public static function check_nonce_field($action, $name){
         return check_admin_referer($action, $name);
     }
 
