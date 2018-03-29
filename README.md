@@ -1,5 +1,5 @@
 # Pebo_wp_nonce_helper
-<h3>Hellper clas for handling nonces on WorPress.</h3>
+<h3>Helper clas for handling nonces on WorPress.</h3>
 <h4><strong></strong></h4>
 <h4><strong>Ussage:</strong></h4>
 <p>to include this class in to your project:</p>
