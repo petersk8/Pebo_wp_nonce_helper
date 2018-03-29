@@ -38,7 +38,7 @@
 <div>
 <div></div>
 <pre><code>
-  if(Pebo_wp_nonce_helper::check_nonce_field('nonce_name', 'action_name') != false){
+  if(Pebo_wp_nonce_helper::check_nonce_field('name_of_my_action', 'name_of_nonce_field') != false){
   	//Do Something..
   {
   </code></pre>
