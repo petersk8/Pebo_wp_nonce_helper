@@ -62,14 +62,11 @@ class Pebo_wp_nonce_helper{
 
     /**
      * Creates a nonce hidden field to use within a form
-     * @param string $action (optional) nonce action name
-     * @param string $name (optional) nonce action name
-     * @param string $referer  nonce name
-     * @param string $echo (optional) nonce action name
-     * 
+     * @param string $action (optional) Action name
+     * @param string $name (optional) Nonce name
      */
-    public static function create_hidden_field($action, $name, $referer, $echo){
-        $hiddenfied = wp_nonce_field($action, $name, $referer, $echo);
+    public static function get_hidden_field($action, $name){
+        $hiddenfied = wp_nonce_field($action, $name);
         return $hiddenfied; 
     }
 
