@@ -7,7 +7,7 @@
 <li>download or clone this project and place the file&nbsp;<a class="js-navigation-open" title="Pebo_wp_nonce_helper.php" id="a56be3fed4cae429b7ce011d32a6cf28-70177936f4379dd925f63023abcb01a700575013" href="https://github.com/petersk8/Pebo_wp_nonce_helper/blob/master/Pebo_wp_nonce_helper.php">Pebo_wp_nonce_helper.php</a> in to your library folder (inside your project).</li>
 <li>include the class in your code file:</li>
 </ul>
-<pre class="lang-php prettyprint prettyprinted"><code><span class="pln">require_once dirname</span><span class="pun">(</span><span class="pln">__FILE__</span><span class="pun">).</span><span class="str">'/you_library_path/<span style="color: #000000;">Pebo_wp_nonce_helper.php</span>'</span><span class="pun">;</span></code></pre>
+<pre class="lang-php prettyprint prettyprinted"><code><span class="pln">include_once dirname</span><span class="pun">(</span><span class="pln">__FILE__</span><span class="pun">).</span><span class="str">'/you_library_path/<span style="color: #000000;">Pebo_wp_nonce_helper.php</span>'</span><span class="pun">;</span></code></pre>
 <ul>
 <li>Call methods using the formula:</li>
 </ul>
