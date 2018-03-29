@@ -37,7 +37,7 @@ class Pebo_wp_nonce_helper{
     /**
      * Validates a nonce field
      * @param string $nonce (required) Nonce to verify.
-     * @param string $action Nonce to verify.
+     * @param string $action Action name.
      * @return boolean/integer false if invalid, 1 (12 hours or less), 2 (12 and 24 hours) .
      */
     public static function nonce_verify($nonce, $action){    
