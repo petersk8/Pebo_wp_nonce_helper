@@ -55,6 +55,16 @@ class Pebo_wp_nonce_helper{
         return $hiddenfied; 
     }
 
+    /**
+     * Validates a nounce hidden field (this fucntion returns only true or die).
+     * @param string $action (optional) Action name
+     * @param string $name (optional) Nonce name
+     */
+    public static function check_nounce_field($action, $name){
+        return check_admin_referer($action, $name);
+    }
+
+
 
 
 
