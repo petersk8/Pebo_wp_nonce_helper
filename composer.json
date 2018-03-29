@@ -9,7 +9,6 @@
             "email": "pedroborrego@pebo.pro"
         }
     ],
-    "require": {
-        "php": "^5.3.3 || ^7.0"
+    "require": {        
     }
 }
