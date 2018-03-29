@@ -13,7 +13,7 @@
 </ul>
 <pre class="lang-php prettyprint prettyprinted"><code><span class="str"><span style="color: #000000;">Pebo_wp_nonce_helper.php::method_name($args ...)</span></span></code>;</pre>
 <p></p>
-<h4>Funtionality:</h4>
+<h4>Functionality: </h4>
 <p>Setting nonces life time:</p>
 <pre class="lang-php prettyprint prettyprinted"><code><span class="str"><span style="color: #000000;">Pebo_wp_nonce_helper.php::set_nonce_duration($time_in_secconds)</span></span></code>;</pre>
 <p></p>
