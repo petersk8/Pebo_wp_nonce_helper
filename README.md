@@ -9,7 +9,13 @@
 </ul>
 <pre class="lang-php prettyprint prettyprinted"><code><span class="pln">include_once dirname</span><span class="pun">(</span><span class="pln">__FILE__</span><span class="pun">).</span><span class="str">'/you_library_path/<span style="color: #000000;">Pebo_wp_nonce_helper.php</span>'</span><span class="pun">;</span></code></pre>
 <ul>
-<li>Call methods using the formula:</li>
+  <li>Or using composer:</li>
+  <pre>
+    composer require pebo/wp_nonce_helper=dev-master
+  </pre>
+  </ul>
+  <ul>
+<li>Then call methods using the formula:</li>
 </ul>
 <pre class="lang-php prettyprint prettyprinted"><code><span class="str"><span style="color: #000000;">Pebo_wp_nonce_helper.php::method_name($args ...)</span></span></code>;</pre>
 <p></p>
