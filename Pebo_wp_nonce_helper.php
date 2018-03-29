@@ -11,11 +11,69 @@ if ( ! defined( 'WPINC' ) ) {
 class Pebo_wp_nonce_helper{
 
     /**
-     * Set custom duration for the nonce field
+     * Set custom duration for the nonces fields - carefull this is global and applies to all nonces.
      * @param integer $time_in_secconds
      */
-    public function set_nonce_duration($time_in_secconds){
+    public static function set_nonce_duration($time_in_secconds){
         add_filter( 'nonce_life', function () { return 4 * $time_in_secconds; } );
     }
+
+     /**
+     * Creates a secure Url for a specific ation.
+     * @param string $actionurl The url of the action to secure
+     * @param string $action nonce action name
+     * @param string $name nonce name
+     * @return string $secured_url a url with nonces
+     */
+    public static function create_nonce_url($actionurl, $action, $name){
+        //action url is required
+        if(!isset($actionurl)){
+            return null;
+        }
+        $secured_url = wp_nonce_url($actionurl, $action, $name );
+        return $secured_url;
+    }
+
+     /**
+     * Creates a secure Url for a specific ation.
+     * @param string $actionurl (required) The url of the action to secure
+     * @param string $action nonce action name
+     * @param string $name nonce name
+     * @return string $secured_url a url with nonces
+     */
+    public static function create_nonce_url($actionurl, $action, $name){
+        //action url is required
+        if(!isset($actionurl)){
+            return null;
+        }
+        $secured_url = wp_nonce_url($actionurl, $action, $name );
+        return $secured_url;
+    }
+
+    /**
+     * Validates a nonce field
+     * @param string $nonce (required) Nonce to verify.
+     * @param string $action Nonce to verify.
+     * @return boolean/integer false if invalid, 1 (12 hours or less), 2 (12 and 24 hours) .
+     */
+    public static function nonce_verify($nonce, $action){    
+        return wp_verify_nonce($nonce, $action);
+    }
+
+    /**
+     * Creates a nonce hidden field to use within a form
+     * @param string $action (optional) nonce action name
+     * @param string $name (optional) nonce action name
+     * @param string $referer  nonce name
+     * @param string $echo (optional) nonce action name
+     * 
+     */
+    public static function create_hidden_field($action, $name, $referer, $echo){
+        $hiddenfied = wp_nonce_field($action, $name, $referer, $echo);
+        return $hiddenfied; 
+    }
+
+
+
 
 }
