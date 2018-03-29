@@ -9,6 +9,7 @@
             "email": "pedroborrego@pebo.pro"
         }
     ],
+    "minimum-stability": "dev",
     "require": {        
     }
 }
