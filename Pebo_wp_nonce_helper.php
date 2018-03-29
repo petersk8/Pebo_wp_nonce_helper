@@ -4,7 +4,6 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-
 /**
  * Manage nonce operations
  */
@@ -63,9 +62,5 @@ class Pebo_wp_nonce_helper{
     public static function check_nounce_field($action, $name){
         return check_admin_referer($action, $name);
     }
-
-
-
-
 
 }
